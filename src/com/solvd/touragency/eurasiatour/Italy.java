@@ -1,4 +1,4 @@
-package com.solvd.touragency.worldtrip;
+package com.solvd.touragency.eurasiatour;
 
 public class Italy extends WestEurope{
 
@@ -7,7 +7,6 @@ public class Italy extends WestEurope{
     private int time;
 
     public Italy() {
-
     }
 
     public Italy(String place1, int time1) {
@@ -19,20 +18,16 @@ public class Italy extends WestEurope{
         place = place2;
     }
 
-
     public String getVoice() {
-
         return place;
     }
 
     public void setSize(int time2) {
-
         time = time2;
     }
 
 
     public int getSize() {
-
         return time;
     }
 

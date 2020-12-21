@@ -1,21 +1,25 @@
 package com.solvd.touragency;
 
-import com.solvd.touragency.worldtrip.Asia;
-import com.solvd.touragency.worldtrip.Europe;
+import com.solvd.touragency.eurasiatour.Coliseum;
+import com.solvd.touragency.eurasiatour.Europe;
+import com.solvd.touragency.eurasiatour.Asia;
+import com.solvd.touragency.eurasiatour.Japan;
 
 
-
-public class executor {
+class Executor {
 
 
     public static void main(String[] args) {
 
+
+
         Europe europe = new Europe();
         europe.printInfo();
 
-        Asia asia = new Asia();
-        asia.run();
+        Asia japan = new Japan();
+        japan.greetings();
 
-        System.out.println(asia.getYen());
+        Europe coliseum = new Coliseum();
+        coliseum.run();
     }
 }
