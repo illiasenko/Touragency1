@@ -1,6 +1,7 @@
-package com.solvd.touragency.worldtrip;
+package com.solvd.touragency.eurasiatour;
 
-public class Asia implements World, Japan{
+
+public abstract class Asia implements Eurasia, Bonus {
 
     public Asia() {
     }
@@ -13,10 +14,14 @@ public class Asia implements World, Japan{
     @Override
     public void printInfo() {
         System.out.println("BigTourAsia");
-
     }
+
     @Override
-    public boolean getYen() {
+    public boolean getBonuses() {
         return false;
     }
+    public void greetings() {
+        System.out.println("Greetings from Asia");
+    }
+
 }

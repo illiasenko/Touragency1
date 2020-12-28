@@ -1,13 +1,14 @@
-package com.solvd.touragency.worldtrip;
+package com.solvd.touragency.eurasiatour;
 
 public class Italy extends WestEurope{
 
 
     private String place;
     private int time;
+    public final String period = "winter";
+
 
     public Italy() {
-
     }
 
     public Italy(String place1, int time1) {
@@ -15,24 +16,20 @@ public class Italy extends WestEurope{
         time = time1;
     }
 
-    public void setVoice(String place2) {
+    public void setPlace(String place2) {
         place = place2;
     }
 
-
-    public String getVoice() {
-
+    public String getPlace() {
         return place;
     }
 
-    public void setSize(int time2) {
-
+    public void setTime(int time2) {
         time = time2;
     }
 
 
     public int getSize() {
-
         return time;
     }
 
