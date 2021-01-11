@@ -1,12 +1,13 @@
-package com.solvd.touragency.cruise;
+package com.solvd.touragency.americatour;
 
-public  abstract class America {
+
+public abstract class America {
 
 
     private String place;
     private int time;
     private int price;
-    private boolean isYacht = false;
+    private boolean isyacht = false;
 
     public America() {
 
@@ -18,12 +19,12 @@ public  abstract class America {
         this.time = time;
     }
 
-    abstract public  void printInfo();
+    abstract public void printInfo();
 
-    public boolean Yacht(boolean isYacht) {
-        this.isYacht = isYacht;
+    public boolean yacht(boolean isyacht) {
+        this.isyacht = isyacht;
 
-        return this.isYacht;
+        return this.isyacht;
     }
 
     public String getPlace() {
@@ -37,5 +38,4 @@ public  abstract class America {
     public int getPrice() {
         return price;
     }
-
 }

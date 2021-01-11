@@ -1,4 +1,4 @@
-package com.solvd.touragency.worldtrip;
+package com.solvd.touragency.eurasiatour;
 
 public class China extends EastAsia {
 
@@ -9,33 +9,34 @@ public class China extends EastAsia {
     }
 
 
-    public China(String place3, int time3){
+    public China(String place3, int time3) {
         place = place3;
         time = time3;
     }
 
-    public void setVoice (String place3){
+    public void setVoice(String place3) {
         place = place3;
     }
 
 
-    public String getVoice () {
-
+    public String getVoice() {
         return place;
     }
 
-    public void setSize ( int time3){
-
+    public void setSize(int time3) {
         time = time3;
     }
 
 
-    public int getSize () {
-
+    public int getSize() {
         return time;
     }
+    public void greetings(){
+        super.greetings();
+        System.out.println("Hello from China");
+    }
 
-    public void printFields () {
+    public void printFields() {
         System.out.println("Place: " + place);
         System.out.println("Time: " + time);
     }

@@ -1,4 +1,4 @@
-package com.solvd.touragency.cruise;
+package com.solvd.touragency.americatour;
 
 public class Usa extends America {
 
@@ -16,8 +16,7 @@ public class Usa extends America {
         System.out.println("place: " + getPlace());
         System.out.println("price: " + getPrice());
         System.out.println("time: " + getTime());
-        System.out.println(Yacht(true));
+        System.out.println(yacht(true));
     }
 
 }
-
