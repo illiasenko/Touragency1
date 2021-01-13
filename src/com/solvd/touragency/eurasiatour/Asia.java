@@ -5,17 +5,14 @@ public abstract class Asia implements Eurasia, Bonus {
 
     public Asia() {
     }
-
     @Override
     public void run() {
         System.out.println("AsiaTour!!");
     }
-
     @Override
     public void printInfo() {
-        System.out.println("BigTourAsia");
+        System.out.println("Let's Go To Asia");
     }
-
     @Override
     public boolean getBonuses() {
         return false;
@@ -23,5 +20,4 @@ public abstract class Asia implements Eurasia, Bonus {
     public void greetings() {
         System.out.println("Greetings from Asia");
     }
-
 }

@@ -2,15 +2,12 @@ package com.solvd.touragency.americatour;
 
 
 public abstract class America {
-
-
     private String place;
     private int time;
     private int price;
     private boolean isyacht = false;
 
     public America() {
-
     }
 
     public America(String place, int time, int price) {

@@ -9,22 +9,19 @@ public class China extends EastAsia {
     }
 
 
-    public China(String place3, int time3) {
-        place = place3;
-        time = time3;
+    public China(String place, int time) {
+        this.place = place;
+        this.time = time;
     }
 
     public void setVoice(String place3) {
         place = place3;
     }
-
-
     public String getVoice() {
         return place;
     }
-
-    public void setSize(int time3) {
-        time = time3;
+    public void setSize(int time) {
+        this.time = time;
     }
 
 

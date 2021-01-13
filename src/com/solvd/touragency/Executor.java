@@ -20,20 +20,15 @@ public class Executor {
 
     public static void main(String[] args) throws AdditionalException {
 
-
+        Spain spain = new Spain();
         Europe europe = new Europe();
         europe.printInfo();
-
         Asia eastasia = new EastAsia();
         eastasia.greetings();
-
         Europe rome = new Rome();
         rome.run();
 
-
         Usa usa = new Usa();
-
-
         World world = new World();
 
         world.addEurasia(rome);
@@ -47,19 +42,13 @@ public class Executor {
 
         world.printInfo();
 
-
-
-       Additional adds = new Additional("Food for free");
-        adds.AlcoholFree();
-        adds.FoodFree();
+        Additional add = new Additional("Food for free");
         try {
-            adds.dinner();
+            add.dinner();
         } catch (AdditionalException e) {
             System.out.println(e.getMessage());
-            System.out.println("having Tequila for free" + adds.AlcoholFree + "mussels for free "
-                    + adds.FoodFree);
         } finally {
             System.out.println("have a nice dinner");
         }
     }
-    }
+}

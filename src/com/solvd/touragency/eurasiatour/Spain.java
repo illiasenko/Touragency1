@@ -1,10 +1,9 @@
 package com.solvd.touragency.eurasiatour;
 
 public final class Spain extends WestEurope {
+    int city = 5;
+    public Spain(){
 
-    public static void main(String[] args) {
-
-        int city = 5;
         switch (city) {
             case 1:
                 System.out.println("Visit Madrid");

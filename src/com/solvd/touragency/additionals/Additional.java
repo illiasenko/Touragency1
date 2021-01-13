@@ -1,47 +1,36 @@
 package com.solvd.touragency.additionals;
 
 
-    public  class Additional {
+public class Additional {
 
+    private String drink;
+    private String food;
 
-        public String AlcoholFree;
-        public String FoodFree;
-        String type;
-        boolean isAlcoholFree;
-        boolean isFoodFree;
-
-
-        public Additional(String name) {
-            this.type = type;
-        }
-
-        public static void main(String[] args) {
-
-        }
-
-        public void AlcoholFree() {
-
-            System.out.println("Free Tequila!");
-            this.isAlcoholFree = true;
-        }
-
-        public void FoodFree() {
-
-            System.out.println("Free mussels!");
-            this.isFoodFree = true;
-        }
-
-        public void takediner() {
-        }
-
-    public void dinner() throws AdditionalException {
-
-        System.out.println("Having a full dinner!");
-        if (isAlcoholFree && isAlcoholFree) {
-            System.out.println("All inclusive");
-        } else {
-            throw new AdditionalException("nonfree " + " nonfree!");
-        }
+    public Additional(String food_for_free) {
     }
 
+    public void setDrink(String drink) {
+        this.drink = drink;
+    }
+
+    public String getDrink() {
+        return this.drink;
+    }
+
+    public void setFood(String food) {
+        this.food = food;
+    }
+
+    public String getFood() {
+        return this.food;
+    }
+        public void dinner () throws AdditionalException{
+        if (drink == null || food == null || drink.isEmpty() || food.isEmpty()) {
+            throw new AdditionalException("You need to pay the bill");
+        }
+        System.out.println("All inclusive");
+
+    }
 }
+
+

@@ -3,22 +3,15 @@ package com.solvd.touragency.eurasiatour;
 public class Europe implements Eurasia, Bonus {
 
     public Europe() {
-
     }
-
-    public Europe(String welcome_to_europe) {
-    }
-
     @Override
     public void run() {
-        System.out.println("EuropeTour");
+        System.out.println("Euro Tour");
     }
-
     @Override
     public void printInfo() {
-        System.out.println("TourtoEurope");
+        System.out.println("Tour around the whole Europe");
     }
-
     @Override
     public boolean getBonuses() {
         return false;

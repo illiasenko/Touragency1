@@ -6,9 +6,7 @@ public class EastAsia extends Asia{
     private int time;
 
     public EastAsia() {
-
     }
-
     public void setPlace(String place) {
         this.place = place;
     }

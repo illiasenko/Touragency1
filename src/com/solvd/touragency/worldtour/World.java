@@ -34,33 +34,27 @@ public class World {
     public void addEurasia(Eurasia eurasia) {
         corral.add(eurasia);
     }
-
     public void addAmerica(America america) {
         slot.add(america);
     }
-
     public void addSummerTour(Eurasia eurasia) {
         summerTour.add(eurasia);
     }
-
     public void printInfo() {
         System.out.println("=====Eurasia Tour====");
 
         for (Eurasia eurasia : corral) {
             System.out.println(eurasia.toString());;
         }
-
         System.out.println("=====America Tour======");
 
         for (Object america : slot) {
             System.out.println(america.toString());;
         }
-
         System.out.println("=====Summer Tour======");
 
         for (Eurasia eurasia : summerTour) {
             System.out.println(eurasia.toString());;
         }
     }
-
 }
