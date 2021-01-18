@@ -48,7 +48,7 @@ public class World {
         }
         System.out.println("=====America Tour======");
 
-        for (Object america : slot) {
+        for (America america : slot) {
             System.out.println(america.toString());;
         }
         System.out.println("=====Summer Tour======");

@@ -2,6 +2,7 @@ package com.solvd.touragency.eurasiatour;
 
 public final class Spain extends WestEurope {
     int city = 5;
+    private String place;
     public Spain(){
 
         switch (city) {

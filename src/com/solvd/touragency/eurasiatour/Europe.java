@@ -1,6 +1,6 @@
 package com.solvd.touragency.eurasiatour;
 
-public class Europe implements Eurasia, Bonus {
+public abstract class Europe implements Eurasia, Bonus {
 
     public Europe() {
     }
